@@ -1,0 +1,26 @@
+body {
+    background-color: antiquewhite;
+}
+
+#search-container {
+    margin-top: 5%;
+    padding: 0 10px 0 10px;
+
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px black;
+
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    align-items: start;
+}
+
+#search {
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
