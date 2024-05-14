@@ -12,8 +12,9 @@ body {
 
     display: flex;
     flex-direction: column;
-    height: 5vh;
+    height: auto;
     align-items: start;
+    gap: 5px;
 }
 
 #search {
@@ -24,3 +25,30 @@ body {
     gap: 5px;
 }
 
+.icon {
+    height: 20%;
+    border-radius: 100%;
+    padding: 3px;
+
+    flex: 0.1 0.1 auto;
+}
+
+.icon:hover {
+    outline: 1px solid #007BFF;
+}
+
+#search-bar {
+    flex: 2 0 auto;
+
+    border: none;
+    background-color: transparent;
+}
+
+#search-bar:focus {
+    outline: 0;
+}
+
+#search-results {
+    display: flex;
+    flex-direction: column;
+}

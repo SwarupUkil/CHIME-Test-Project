@@ -23,6 +23,30 @@
 </body>
 
 <script>
+    document.getElementById("search").addEventListener("input", updateQuery)
+    // Test data to see how the data display would act.
+    let data = [
+        'Apple',
+        'Banana',
+        'Cherry',
+    ];
+
+    function updateQuery(event) {
+        const searchText = event.target.value
+        const results = document.getElementById("search-results")
+
+        // Delete all children nodes.
+        while (results.firstChild) {
+            results.removeChild(results.firstChild);
+        }
+
+        for (let i = 0; i < data.length; i++){
+            let newResult = document. createElement("div")
+            newResult.textContent = data[i]
+            // newResult.classList.add("")
+            results.append(newResult)
+        }
+    }
 
 </script>
 </html>
