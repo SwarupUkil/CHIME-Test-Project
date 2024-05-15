@@ -3,7 +3,7 @@ body {
 }
 
 #search-container {
-    margin-top: 5%;
+    margin-top: 20%;
     padding: 0 10px 0 10px;
 
     background-color: whitesmoke;
@@ -26,7 +26,7 @@ body {
 }
 
 .icon {
-    height: 20%;
+    height: 35%;
     border-radius: 100%;
     padding: 3px;
 
@@ -42,6 +42,7 @@ body {
 
     border: none;
     background-color: transparent;
+    font-size: large;
 }
 
 #search-bar:focus {
@@ -60,7 +61,7 @@ body {
 .results {
     margin-bottom: 8px;
     font-family: Arial, sans-serif;
-    font-size: small;
+    font-size: medium;
 }
 
 #line {
@@ -86,4 +87,22 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
+}
+
+@media (max-width: 480px) {
+    #search-bar {
+        font-size: 50px;
+    }
+
+    .icon {
+        height: 65%;
+    }
+
+    .results {
+        font-size: 50px;
+    }
+
+    #result-data-container {
+        font-size: 50px;
+    }
 }
