@@ -14,10 +14,11 @@ body {
     flex-direction: column;
     height: auto;
     align-items: start;
-    gap: 5px;
 }
 
 #search {
+    margin-bottom: -3%;
+
     display: flex;
     height: 5vh;
     justify-content: space-between;
@@ -49,6 +50,41 @@ body {
 }
 
 #search-results {
+    margin: 3% 10px 0 22px;
+    padding-bottom: 10px;
+
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    gap: 5px
+}
+
+.results {
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+
+#line {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    opacity: 30%;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-data-container {
+    margin-top: 5%;
+    padding: 10px 10px 10px 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: large;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
 }
