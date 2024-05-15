@@ -8,7 +8,6 @@
 <body>
     <div id="search-container">
         <div id="search">
-
             <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <path d="M 0 0 L 100 100" fill="transparent" stroke="black" stroke-width="5"/>
                 <path d="M 100 0 L 0 100" fill="transparent" stroke="black" stroke-width="5"/>
@@ -16,37 +15,14 @@
             <input id="search-bar" type="text"  placeholder="Search"/>
         </div>
 
+        <div id="line" class="hidden"></div>
         <div id="search-results">
             <!--      append all the matching options      -->
         </div>
     </div>
+
+    <div id="result-data-container"></div>
 </body>
 
-<script>
-    document.getElementById("search").addEventListener("input", updateQuery)
-    // Test data to see how the data display would act.
-    let data = [
-        'Apple',
-        'Banana',
-        'Cherry',
-    ];
-
-    function updateQuery(event) {
-        const searchText = event.target.value
-        const results = document.getElementById("search-results")
-
-        // Delete all children nodes.
-        while (results.firstChild) {
-            results.removeChild(results.firstChild);
-        }
-
-        for (let i = 0; i < data.length; i++){
-            let newResult = document. createElement("div")
-            newResult.textContent = data[i]
-            // newResult.classList.add("")
-            results.append(newResult)
-        }
-    }
-
-</script>
+<script src="./script.js"></script>
 </html>
