@@ -12,13 +12,12 @@ body {
 
     display: flex;
     flex-direction: column;
-    height: auto;
     align-items: start;
+
+    height: auto;
 }
 
 #search {
-    margin-bottom: -3%;
-
     display: flex;
     height: 5vh;
     justify-content: space-between;
@@ -50,22 +49,22 @@ body {
 }
 
 #search-results {
-    margin: 3% 10px 0 22px;
-    padding-bottom: 10px;
+    margin: 0 10px 0 22px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    gap: 5px
+    /*gap: 5px*/
 }
 
 .results {
+    margin-bottom: 8px;
     font-family: Arial, sans-serif;
     font-size: small;
 }
 
 #line {
+    margin: 0 1% 1% 1%;
     height: 1px;
     width: 100%;
     background-color: black;

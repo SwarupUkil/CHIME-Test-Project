@@ -76,6 +76,7 @@ function printData(event) {
     const resultant = matched[index][0];
     const resultData = document.getElementById("result-data-container");
     clearResultData();
+    console.log(resultant);
 
     for (const [key, value] of Object.entries(resultant)) {
         let attr = document.createElement("div");
@@ -98,9 +99,9 @@ function clear(event){
 
 // Clear the list of "suggestions" when a user searches.
 function clearSearchResults(){
-    const resultData = document.getElementById("result-data-container");
-    while (resultData.firstChild) {
-        resultData.removeChild(resultData.firstChild);
+    const results = document.getElementById("search-results");
+    while (results.firstChild) {
+        results.removeChild(results.firstChild);
     }
 }
 
